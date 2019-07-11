@@ -21,4 +21,4 @@ import { Constants } from './shared';
     Constants.DI.Client,
   ],
 })
-export class CacheModule {}
+export class NatsModule {}
