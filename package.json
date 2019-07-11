@@ -1,6 +1,6 @@
 {
   "name": "gafrome-core",
-  "version": "1.0.1",
+  "version": "1.0.8",
   "description": "Core of Gafrome system",
   "main": "index.js",
   "repository": {
@@ -15,7 +15,7 @@
   "scripts": {
     "build": "gulp build:prod",
     "watch": "gulp watch",
-    "publish:prod": "gulp publish"
+    "publish:prod": "gulp publish && cd ./dist && npm publish"
   },
   "devDependencies": {
     "@nestjs/testing": "^6.3.2",
