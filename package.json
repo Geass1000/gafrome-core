@@ -1,14 +1,22 @@
 {
   "name": "gafrome-core",
   "version": "1.0.0",
-  "description": "",
+  "description": "Core of Gafrome system",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Geass1000/gafrome-core.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Geass1000/gafrome-core/issues"
+  },
+  "author": "Andrei Shuleiko",
+  "license": "ISC",
   "scripts": {
     "build": "gulp build:prod",
-    "watch": "gulp watch"
+    "watch": "gulp watch",
+    "publish": "gulp publish"
   },
-  "author": "",
-  "license": "ISC",
   "devDependencies": {
     "@nestjs/testing": "^6.3.2",
     "@types/lodash": "^4.14.135",
