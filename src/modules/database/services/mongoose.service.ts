@@ -1,5 +1,6 @@
 import * as Nest from '@nestjs/common';
 
+import * as _ from 'lodash';
 import * as mongoose from 'mongoose';
 import * as Bluebird from 'bluebird';
 
@@ -15,7 +16,11 @@ export class MongooseService {
       private readonly dbConfig: Interfaces.DatabaseConifg,
   ) {}
 
-  public async connect () {
+  public async connect (): Promise<mongoose.Mongoose> {
+    if (_.isNil(this.dbConfig)) {
+      return null;
+    }
+
     (mongoose as any).Promise = Bluebird;
     const connectionString = this.dbHelper
       .getConnectionString(Enums.DatabaseType.Mongodb, this.dbConfig);
