@@ -1,0 +1,16 @@
+version: '3.7'
+
+networks:
+  app-net:
+    external: true
+
+services:
+  gafrome-core:
+    image: gafrome-app:latest
+    networks:
+      - app-net
+    volumes:
+      - .:/app
+    command: npm run watch
+
+# docker-compose up
