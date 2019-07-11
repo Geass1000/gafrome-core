@@ -1,5 +1,5 @@
 
-export enum Environment {
+export enum Mode {
   Development = 'development',
   Production = 'production',
   Staging = 'staging',
