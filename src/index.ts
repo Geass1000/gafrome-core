@@ -1,11 +1,11 @@
-import * as Interceptorrs from './interceptors';
+import * as Interceptors from './interceptors';
 import * as Decorators from './decorators';
 import * as Exceptions from './exceptions';
 import * as Modules from './modules';
 import * as Shared from './shared';
 
 export {
-  Interceptorrs,
+  Interceptors,
   Decorators,
   Exceptions,
   Modules,
