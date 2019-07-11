@@ -15,7 +15,7 @@
   "scripts": {
     "build": "gulp build:prod",
     "watch": "gulp watch",
-    "publish": "gulp publish"
+    "publish:prod": "gulp publish"
   },
   "devDependencies": {
     "@nestjs/testing": "^6.3.2",
