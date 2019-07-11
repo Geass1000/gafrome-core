@@ -1,6 +1,6 @@
 {
   "name": "gafrome-core",
-  "version": "1.0.8",
+  "version": "1.0.10",
   "description": "Core of Gafrome system",
   "main": "index.js",
   "repository": {
